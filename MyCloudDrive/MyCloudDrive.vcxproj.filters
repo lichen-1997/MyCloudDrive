@@ -21,28 +21,37 @@
       <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
       <Extensions>ts</Extensions>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{835ef3ca-476d-4643-9d60-dfaa809a23d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fend">
+      <UniqueIdentifier>{1b33c348-1df1-4689-8a40-1609df0c62f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fend\uiLogin">
+      <UniqueIdentifier>{d7540906-b02c-45be-b7c0-1fedcaed1d71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="MyCloudDrive.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-    <QtUic Include="MyCloudDrive.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtMoc Include="MyCloudDrive.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <ClCompile Include="MyCloudDrive.cpp">
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ResourceCompile Include="$pro_name$.rc">
-    </ResourceCompile>
-    <None Include="$pro_name$.ico">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="$pro_name$.def">
-      <Filter>Resource Files</Filter>
-    </None>
-
+    <ClCompile Include="src\fend\uiLogin\LoginDialog.cpp">
+      <Filter>src\fend\uiLogin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\fend\uiLogin\LoginDialog.h">
+      <Filter>src\fend\uiLogin</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\fend\uiLogin\LoginDialog.ui">
+      <Filter>src\fend\uiLogin</Filter>
+    </QtUic>
   </ItemGroup>
 </Project>

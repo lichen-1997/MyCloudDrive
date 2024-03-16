@@ -1,10 +1,11 @@
-#include "MyCloudDrive.h"
 #include <QtWidgets/QApplication>
+
+#include "LoginDialog.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MyCloudDrive w;
+    LoginDialog w;
     w.show();
     return a.exec();
 }
