@@ -35,6 +35,9 @@
      <height>30</height>
     </rect>
    </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLineEdit" name="le_key">
    <property name="geometry">
@@ -44,6 +47,12 @@
      <width>300</width>
      <height>30</height>
     </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::PasswordEchoOnEdit</enum>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="l_key">
@@ -67,6 +76,9 @@
      <width>300</width>
      <height>30</height>
     </rect>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="l_remark">
