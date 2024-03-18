@@ -11,6 +11,12 @@ public:
 	LoginDialog(QWidget *parent = nullptr);
 	~LoginDialog();
 
+private slots:
+	void on_pb_close_clicked();
+
+private:
+	void init();
+
 private:
 	Ui::LoginDialogClass ui;
 };
