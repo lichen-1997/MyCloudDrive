@@ -17,7 +17,13 @@ void LoginDialog::init()
 
 void LoginDialog::on_pb_close_clicked()
 {
-	close();
+	reject();
 }
+
+void LoginDialog::on_pb_login_clicked()
+{
+	accept();
+}
+
 
 

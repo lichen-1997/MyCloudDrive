@@ -1,4 +1,5 @@
 #pragma once
+#pragma execution_character_set("UTF-8")
 
 #include <QDialog>
 #include "ui_LoginDialog.h"
@@ -13,6 +14,7 @@ public:
 
 private slots:
 	void on_pb_close_clicked();
+	void on_pb_login_clicked();
 
 private:
 	void init();
