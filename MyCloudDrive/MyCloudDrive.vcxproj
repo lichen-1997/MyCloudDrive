@@ -93,8 +93,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\fend\uiCommon\BreadWidget\BreadWidget.cpp" />
     <ClCompile Include="src\fend\uiLogin\LoginDialog.cpp" />
+    <ClCompile Include="src\fend\uiMain\BucketsWidget\BucketsWidget.cpp" />
     <ClCompile Include="src\fend\uiMain\MainWidget.cpp" />
+    <ClCompile Include="src\fend\uiMain\ObjectsWidget\ObjectsWidget.cpp" />
+    <ClCompile Include="src\fend\uiMain\ToolBarWidget\ToolBarWidget.cpp" />
     <QtRcc Include="MyCloudDrive.qrc" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -102,11 +106,27 @@
     <QtMoc Include="src\fend\uiLogin\LoginDialog.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="src\fend\uiCommon\BreadWidget\BreadWidget.ui" />
     <QtUic Include="src\fend\uiLogin\LoginDialog.ui" />
+    <QtUic Include="src\fend\uiMain\BucketsWidget\BucketsWidget.ui" />
     <QtUic Include="src\fend\uiMain\MainWidget.ui" />
+    <QtUic Include="src\fend\uiMain\ObjectsWidget\ObjectsWidget.ui" />
+    <QtUic Include="src\fend\uiMain\ToolBarWidget\ToolBarWidget.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\fend\uiMain\MainWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\fend\uiMain\BucketsWidget\BucketsWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\fend\uiMain\ToolBarWidget\ToolBarWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\fend\uiCommon\BreadWidget\BreadWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\fend\uiMain\ObjectsWidget\ObjectsWidget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
