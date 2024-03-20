@@ -30,6 +30,9 @@
     <Filter Include="src\fend\uiLogin">
       <UniqueIdentifier>{d7540906-b02c-45be-b7c0-1fedcaed1d71}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\fend\uiMain">
+      <UniqueIdentifier>{f936953e-6538-4999-aee3-b64170aece24}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="MyCloudDrive.qrc">
@@ -43,15 +46,24 @@
     <ClCompile Include="src\fend\uiLogin\LoginDialog.cpp">
       <Filter>src\fend\uiLogin</Filter>
     </ClCompile>
+    <ClCompile Include="src\fend\uiMain\MainWidget.cpp">
+      <Filter>src\fend\uiMain</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\fend\uiLogin\LoginDialog.h">
       <Filter>src\fend\uiLogin</Filter>
     </QtMoc>
+    <QtMoc Include="src\fend\uiMain\MainWidget.h">
+      <Filter>src\fend\uiMain</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\fend\uiLogin\LoginDialog.ui">
       <Filter>src\fend\uiLogin</Filter>
+    </QtUic>
+    <QtUic Include="src\fend\uiMain\MainWidget.ui">
+      <Filter>src\fend\uiMain</Filter>
     </QtUic>
   </ItemGroup>
 </Project>

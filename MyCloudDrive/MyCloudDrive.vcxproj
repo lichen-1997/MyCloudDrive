@@ -65,7 +65,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\src\fend\uiLogin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\src\fend\uiMain;.\src\fend\uiLogin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -94,6 +94,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\fend\uiLogin\LoginDialog.cpp" />
+    <ClCompile Include="src\fend\uiMain\MainWidget.cpp" />
     <QtRcc Include="MyCloudDrive.qrc" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -102,6 +103,10 @@
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\fend\uiLogin\LoginDialog.ui" />
+    <QtUic Include="src\fend\uiMain\MainWidget.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\fend\uiMain\MainWidget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

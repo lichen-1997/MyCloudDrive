@@ -1,14 +1,13 @@
 #include <QtWidgets/QApplication>
-#include <QWidget>
 #include <QDebug>
 #include "LoginDialog.h"
+#include "MainWidget.h"
 
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-	QWidget m;
-	m.setWindowTitle("Ö÷´°¿Ú");
+	MainWidget m;
     LoginDialog w;
     int code = w.exec();
 	if(code == QDialog::Accepted)
