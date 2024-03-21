@@ -48,6 +48,9 @@
     <Filter Include="src\fend\uiMain\03.ObjectsWidget">
       <UniqueIdentifier>{4c56086f-b19c-48e1-9d04-e2818467a078}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\fend\uiCommon\02.PageWidget">
+      <UniqueIdentifier>{edc49049-008f-4bc2-8ac8-edc2179f03d2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="MyCloudDrive.qrc">
@@ -76,6 +79,9 @@
     <ClCompile Include="src\fend\uiMain\ObjectsWidget\ObjectsWidget.cpp">
       <Filter>src\fend\uiMain\03.ObjectsWidget</Filter>
     </ClCompile>
+    <ClCompile Include="src\fend\uiCommon\PageWidget\PageWidget.cpp">
+      <Filter>src\fend\uiCommon\02.PageWidget</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\fend\uiLogin\LoginDialog.h">
@@ -96,6 +102,9 @@
     <QtMoc Include="src\fend\uiMain\ObjectsWidget\ObjectsWidget.h">
       <Filter>src\fend\uiMain\03.ObjectsWidget</Filter>
     </QtMoc>
+    <QtMoc Include="src\fend\uiCommon\PageWidget\PageWidget.h">
+      <Filter>src\fend\uiCommon\02.PageWidget</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\fend\uiLogin\LoginDialog.ui">
@@ -115,6 +124,9 @@
     </QtUic>
     <QtUic Include="src\fend\uiMain\ObjectsWidget\ObjectsWidget.ui">
       <Filter>src\fend\uiMain\03.ObjectsWidget</Filter>
+    </QtUic>
+    <QtUic Include="src\fend\uiCommon\PageWidget\PageWidget.ui">
+      <Filter>src\fend\uiCommon\02.PageWidget</Filter>
     </QtUic>
   </ItemGroup>
 </Project>

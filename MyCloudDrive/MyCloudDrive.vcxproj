@@ -65,7 +65,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\src\fend\uiMain;.\src\fend\uiLogin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\src\fend\uiMain;.\src\fend\uiLogin;.\src\fend\uiCommon\BreadWidget;.\src\fend\uiCommon\PageWidget;.\src\fend\uiMain\BucketsWidget;.\src\fend\uiMain\ObjectsWidget;.\src\fend\uiMain\ToolBarWidget;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -94,6 +94,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\fend\uiCommon\BreadWidget\BreadWidget.cpp" />
+    <ClCompile Include="src\fend\uiCommon\PageWidget\PageWidget.cpp" />
     <ClCompile Include="src\fend\uiLogin\LoginDialog.cpp" />
     <ClCompile Include="src\fend\uiMain\BucketsWidget\BucketsWidget.cpp" />
     <ClCompile Include="src\fend\uiMain\MainWidget.cpp" />
@@ -107,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\fend\uiCommon\BreadWidget\BreadWidget.ui" />
+    <QtUic Include="src\fend\uiCommon\PageWidget\PageWidget.ui" />
     <QtUic Include="src\fend\uiLogin\LoginDialog.ui" />
     <QtUic Include="src\fend\uiMain\BucketsWidget\BucketsWidget.ui" />
     <QtUic Include="src\fend\uiMain\MainWidget.ui" />
@@ -127,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\fend\uiMain\ObjectsWidget\ObjectsWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\fend\uiCommon\PageWidget\PageWidget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

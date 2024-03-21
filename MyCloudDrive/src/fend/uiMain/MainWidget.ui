@@ -1,22 +1,102 @@
-<UI version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>MainWidgetClass</class>
- <widget class="QWidget" name="MainWidgetClass" >
-  <property name="objectName" >
-   <string notr="true">MainWidgetClass</string>
-  </property>
-  <property name="geometry" >
+ <widget class="QWidget" name="MainWidgetClass">
+  <property name="geometry">
    <rect>
-	<x>0</x>
-	<y>0</y>
-	<width>600</width>
-	<height>400</height>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>MainWidget</string>
-  </property>$centralwidget$
+  </property>
+  <widget class="ToolBarWidget" name="toolBarWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>10</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="BreadWidget" name="breadWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>100</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="ObjectsWidget" name="objectsWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>200</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="PageWidget" name="pageWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>290</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="BucketsWidget" name="bucketsWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>140</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ToolBarWidget</class>
+   <extends>QWidget</extends>
+   <header>toolbarwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BreadWidget</class>
+   <extends>QWidget</extends>
+   <header>breadwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ObjectsWidget</class>
+   <extends>QWidget</extends>
+   <header>objectswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PageWidget</class>
+   <extends>QWidget</extends>
+   <header>pagewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BucketsWidget</class>
+   <extends>QWidget</extends>
+   <header>bucketswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
  <connections/>
-</UI>
+</ui>
