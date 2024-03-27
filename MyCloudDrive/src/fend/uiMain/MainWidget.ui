@@ -13,25 +13,30 @@
   <property name="windowTitle">
    <string>MainWidget</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,4">
+  <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
-    <widget class="BucketsWidget" name="bucketsWidget" native="true"/>
-   </item>
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1,0">
-     <item>
-      <widget class="ToolBarWidget" name="toolBarWidget" native="true"/>
-     </item>
-     <item>
-      <widget class="BreadWidget" name="breadWidget" native="true"/>
-     </item>
-     <item>
-      <widget class="ObjectsWidget" name="objectsWidget" native="true"/>
-     </item>
-     <item>
-      <widget class="PageWidget" name="pageWidget" native="true"/>
-     </item>
-    </layout>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="BucketsWidget" name="bucketsWidget" native="true"/>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1,0">
+       <item>
+        <widget class="ToolBarWidget" name="toolBarWidget" native="true"/>
+       </item>
+       <item>
+        <widget class="BreadWidget" name="breadWidget" native="true"/>
+       </item>
+       <item>
+        <widget class="ObjectsWidget" name="objectsWidget" native="true"/>
+       </item>
+       <item>
+        <widget class="PageWidget" name="pageWidget" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
    </item>
   </layout>
  </widget>
