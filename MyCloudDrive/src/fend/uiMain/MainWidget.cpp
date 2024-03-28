@@ -9,4 +9,21 @@ MainWidget::MainWidget(QWidget *parent)
 }
 
 MainWidget::~MainWidget()
-{}
+{
+	if(m_pLoginDialog != nullptr)
+	{
+		delete m_pLoginDialog;
+		m_pLoginDialog = nullptr;
+	}
+}
+
+void MainWidget::showLoginDialog()
+{
+	if(m_pLoginDialog == nullptr)
+	{
+		m_pLoginDialog = new LoginDialog();
+		connect(m_pLoginDialog, &LoginDialog::accepted, this, &MainWidget::show);
+	}
+	m_pLoginDialog->show();
+}
+

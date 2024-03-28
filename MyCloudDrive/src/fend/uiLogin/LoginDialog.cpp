@@ -22,6 +22,7 @@ void LoginDialog::on_pb_close_clicked()
 
 void LoginDialog::on_pb_login_clicked()
 {
+	// TODO µÇÂ¼ÑéÖ¤
 	accept();
 }
 
